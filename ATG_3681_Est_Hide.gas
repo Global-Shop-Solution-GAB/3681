@@ -1,0 +1,25 @@
+Program.Sub.ScreenSU.Start
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+' 1/8/2010
+' Hide the Estimated Hrs / Pieces on GUI work order operation details screen (OLS009)
+' Hook 15,970 (populate)
+' Originally for Timberland
+' JSO
+
+
+Function.Intrinsic.UI.ChangeCallerProperty(Variable.Passed.000010,"HIDE",1)
+
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$0$}$ATG_3681_Est_Hide$}$RLK$}$4/4/2016
+${$1$}$$}$$}$0$}$15970$}$OLS009-POPULATE-HOOK (On-line GUI)$}$4/4/2016 1:52:45 PM$}$(Program: OLG002; Screen: OLS009)
+
+Program.Sub.Comments.End
+
